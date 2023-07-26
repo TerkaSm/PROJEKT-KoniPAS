@@ -1,0 +1,36 @@
+// COLORS
+
+$color-primary-100: #FAF8F5;
+$color-primary-200: #F2EDE7;
+$color-primary-400: #ECDFD0;
+$color-primary-500: #E0CEBA;
+$color-primary-600: #D5BDA3;
+$color-primary-700: #A69384;
+$color-primary-900: #6C6662;
+
+$color-secondary: #000;
+$color-tertiary: #000;
+$color-quartiary: #000;
+$color-background: #000;
+
+$color-grey-700: #454E47;
+$color-grey-900: #2D332E;
+
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONTS
+
+$font-body: 'Raleway', sans-serif;                  // 300, 300 italic, 400
+$font-special: 'Cormorant Garamond', serif;         // 400, 400 italic, 500
+
+
+// SPACERS
+
+$spacer-half: 0.625rem;
+$spacer: 1.25rem;
+$spacer-double: 2.5rem;
+$spacer-medium: 3.75rem;
+$spacer-large: 5rem;
