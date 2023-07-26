@@ -11,7 +11,7 @@ html {
 
 body {
   box-sizing: border-box;
-  color: #000;
+  color: #FAF8F5;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   line-height: 2rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -30,20 +30,12 @@ a {
 }
 
 .heading-primary {
-  font-size: clamp(2.75rem, 8vw, 4.5rem);
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.heading-secondary {
   font-size: clamp(2.25rem, 6vw, 4rem);
-  text-transform: uppercase;
   font-weight: 400;
 }
 
 .heading-tertiary {
   font-size: clamp(1.8rem, 4vw, 2.75rem);
-  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -433,13 +425,33 @@ template {
   display: none;
 }
 
+.btn {
+  display: inline-block;
+  font-family: "Cormorant Garamond", serif;
+  color: #2D332E;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  line-height: 1.4;
+  font-weight: 500;
+  padding: 8px 30px;
+  border: 1px solid #2D332E;
+  border-radius: 5px;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #A69384;
+  border: 1px solid #A69384;
+}
+
 .header {
   background-color: #ECDFD0;
   color: #2D332E;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
+  max-width: 1600px;
 }
 
 .logo {
@@ -567,4 +579,38 @@ template {
 
 .active::before { /* Styl pro aktivní stav */
   transform: scaleX(1);
+}
+
+.section-hero {
+  color: #454E47;
+  padding: 1.25rem;
+  padding-top: 10rem;
+  height: 90vh;
+  min-height: 300px;
+  max-height: 700px;
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.section-hero__content {
+  flex: 1;
+}
+.section-hero__images {
+  flex: 1;
+  position: relative;
+}
+.section-hero__img-wrapp {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background-image: url(/images/IMG_20230517_165906.jpg);
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+@media screen and (min-width: 750px) {
+  .section-hero {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */

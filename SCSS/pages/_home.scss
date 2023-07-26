@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+//HERO
+
+.section-hero {
+    color: v.$color-grey-700;
+    padding: v.$spacer;
+    padding-top: 10rem;
+    height: 90vh;
+    min-height: 300px;
+    max-height: 700px;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacer-double;
+
+    &__content {
+        flex: 1;
+    }
+
+    &__images {
+        flex: 1;
+        position: relative;
+    }
+
+    &__img-wrapp {
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+        background-image: url(/images/IMG_20230517_165906.jpg);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    @include mx.media-min(750px) {
+        flex-direction: row;
+    }
+}

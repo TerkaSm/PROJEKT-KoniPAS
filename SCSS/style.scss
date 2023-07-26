@@ -6,7 +6,7 @@
 @use 'base/utilities';
 @use 'base/reset';
 
-// @use 'components/buttons';
+@use 'components/buttons';
 // @use 'components/card-project';
 
 // @use 'layout/footer';
@@ -15,4 +15,4 @@
 @use 'layout/mobile-nav';
 @use 'layout/navigation';
 
-// @use 'pages/home';
+@use 'pages/home';
