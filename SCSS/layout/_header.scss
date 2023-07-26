@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+
+.header {
+    background-color: v.$color-primary-400;
+    color: v.$color-grey-900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: v.$spacer;
+}
+
+.logo {
+    width: 18vw;
+    min-width: 100px;
+    max-width: 125px;
+}
