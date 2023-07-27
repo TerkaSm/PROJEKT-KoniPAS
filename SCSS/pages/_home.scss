@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as mx;
 
 
-//HERO
+// HERO
 
 .section-hero {
     color: v.$color-grey-700;
@@ -97,5 +97,16 @@
     @include mx.media-min(1040px) {
         flex-direction: row;
         height: 100vw;
+    }
+}
+
+// SECTION - ACTIONS
+
+.section-actions {
+    padding: v.$spacer;
+
+    &__title {
+        text-align: center;
+        color: v.$color-grey-900;
     }
 }

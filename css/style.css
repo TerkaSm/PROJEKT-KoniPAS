@@ -34,8 +34,8 @@ a {
   font-weight: 400;
 }
 
-.heading-tertiary {
-  font-size: clamp(1.8rem, 4vw, 2.75rem);
+.heading-secondary {
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 400;
 }
 
@@ -450,6 +450,7 @@ template {
 
 .card-action {
   background-color: #F2EDE7;
+  color: #2D332E;
   padding: 20px;
 }
 .card-action__link-grid {
@@ -458,12 +459,22 @@ template {
 }
 .card-action__img {
   place-content: center;
+  display: block;
+  width: 100%;
+}
+.card-action__p {
+  text-align: center;
+  margin-bottom: 0;
 }
 .card-action__link {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.5rem;
   color: #2D332E;
   text-align: center;
+  margin: 0 auto;
+}
+.card-action__link:hover {
+  border-bottom: 1px solid #2D332E;
 }
 
 .header {
@@ -489,16 +500,16 @@ template {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.8rem;
+  gap: 1.3rem;
   justify-content: center;
   margin: 0 auto;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 650px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -737,4 +748,12 @@ template {
     flex-direction: row;
     height: 100vw;
   }
+}
+
+.section-actions {
+  padding: 1.25rem;
+}
+.section-actions__title {
+  text-align: center;
+  color: #2D332E;
 }/*# sourceMappingURL=style.css.map */

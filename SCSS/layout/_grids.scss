@@ -5,15 +5,15 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.8rem;
+    gap: 1.3rem;
     justify-content: center;
     margin: 0 auto;
 
-    @include mx.media-min(750px) {
+    @include mx.media-min(650px) {
         grid-template-columns: 1fr 1fr;
     }
 
-    @include mx.media-min(1100px) {
+    @include mx.media-min(900px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
