@@ -18,20 +18,49 @@
     gap: v.$spacer-double;
 
     &__content {
-        flex: 1;
+        flex: 2;
     }
 
     &__images {
-        flex: 1;
+        flex: 3;
         position: relative;
     }
 
     &__img-wrapp {
-        height: 400px;
-        width: 400px;
-        margin: 0 auto;
+        height: 200px;
+        width: 200px;
         background-image: url(/images/IMG_20230517_165906.jpg);
+        background-size: cover;
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        background-repeat: no-repeat;
+
+        &--1 {
+            height: 275px;
+            width: 275px;
+            background-image: url(/images/IMG_20230517_165906.jpg);
+            position: absolute;
+            bottom: 351px;
+            right: 453px;
+        }
+
+        &--2 {
+            height: 360px;
+            width: 360px;
+            margin-left: 45px;
+            background-image: url(/images/IMG_20230517_165920.jpg);
+            position: absolute;
+            bottom: -63px;
+            right: 425px;
+        }
+
+        &--3 {
+            height: 550px;
+            width: 550px;
+            background-image: url(/images/IMG_20230517_170002.jpg);
+            position: absolute;
+            right: -50px;
+            bottom: 50px;
+        }
     }
 
     @include mx.media-min(750px) {
