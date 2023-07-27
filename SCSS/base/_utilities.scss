@@ -31,14 +31,21 @@
 }
 
 .u-background {
-    background-color: #000;
-    width: 100vw;
+    background-color: v.$color-primary-200;
 
-    &--color-tertiary {
-        background-color: #000;
+    &--color-primary-400 {
+        background-color: v.$color-primary-400;
     }
 
-    &--color-quartiary {
-        background-color: #000;
+    &--color-primary-500 {
+        background-color: v.$color-primary-500;
+    }
+
+    &--color-primary-600 {
+        background-color: v.$color-primary-600;
+    }
+
+    &--color-primary-700 {
+        background-color: v.$color-primary-700;
     }
 }

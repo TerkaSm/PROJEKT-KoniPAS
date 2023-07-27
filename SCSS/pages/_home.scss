@@ -7,63 +7,95 @@
 .section-hero {
     color: v.$color-grey-700;
     padding: v.$spacer;
-    padding-top: 10rem;
+    padding-top: 2rem;
     height: 90vh;
-    min-height: 300px;
+    min-height: 650px;
     max-height: 700px;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: v.$spacer-double;
 
+
     &__content {
         flex: 2;
+
+        @include mx.media-min(1040px) {
+            height: 50vh;
+            padding-top: 8rem;
+        }
     }
 
     &__images {
         flex: 3;
         position: relative;
+
+        @include mx.media-min(1040px) {
+            height: 50vh;
+        }
     }
 
     &__img-wrapp {
-        height: 200px;
-        width: 200px;
-        background-image: url(/images/IMG_20230517_165906.jpg);
         background-size: cover;
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         background-repeat: no-repeat;
 
         &--1 {
-            height: 275px;
-            width: 275px;
+            height: 170px;
+            width: 170px;
             background-image: url(/images/IMG_20230517_165906.jpg);
             position: absolute;
-            bottom: 351px;
-            right: 453px;
+            bottom: 218px;
+            right: 236px;
+
+            @include mx.media-min(1040px) {
+                height: 175px;
+                width: 175px;
+                position: absolute;
+                bottom: 105px;
+                right: 370px;
+            }
         }
 
         &--2 {
-            height: 360px;
-            width: 360px;
+            height: 200px;
+            width: 200px;
             margin-left: 45px;
             background-image: url(/images/IMG_20230517_165920.jpg);
             position: absolute;
-            bottom: -63px;
-            right: 425px;
+            bottom: 0px;
+            right: 228px;
+
+            @include mx.media-min(1040px) {
+                height: 260px;
+                width: 260px;
+                position: absolute;
+                bottom: -185px;
+                right: 347px;
+            }
         }
 
         &--3 {
-            height: 550px;
-            width: 550px;
+            height: 320px;
+            width: 320px;
             background-image: url(/images/IMG_20230517_170002.jpg);
             position: absolute;
-            right: -50px;
+            right: -56px;
             bottom: 50px;
+
+            @include mx.media-min(1040px) {
+                height: 450px;
+                width: 450px;
+                position: absolute;
+                right: -50px;
+                bottom: -130px;
+            }
         }
     }
 
-    @include mx.media-min(750px) {
+    @include mx.media-min(1040px) {
         flex-direction: row;
+        height: 100vw;
     }
 }

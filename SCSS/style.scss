@@ -7,11 +7,11 @@
 @use 'base/reset';
 
 @use 'components/buttons';
-// @use 'components/card-project';
+@use 'components/card-action';
 
 // @use 'layout/footer';
 @use 'layout/header';
-// @use 'layout/grid';
+@use 'layout/grids';
 @use 'layout/mobile-nav';
 @use 'layout/navigation';
 

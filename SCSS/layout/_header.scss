@@ -2,13 +2,17 @@
 
 .header {
     background-color: v.$color-primary-400;
-    color: v.$color-grey-900;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: v.$spacer;
-    max-width: 1600px;
+    width: 100%;
+    
+    &__wrapp {
+        color: v.$color-grey-900;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: v.$spacer;
+        max-width: 1600px;
+    }
 }
 
 .logo {
