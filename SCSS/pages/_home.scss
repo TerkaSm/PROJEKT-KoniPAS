@@ -122,8 +122,10 @@
 
 .section-for {
     padding: v.$spacer;
+    color: v.$color-grey-900;
 
     &__title {
+        text-align: center;
         color: v.$color-grey-900;
     }
 }
@@ -133,9 +135,26 @@
 
 .section-institutions {
     padding: v.$spacer;
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        
+    }
 
     &__title {
         
+    }
+
+    &__fig {
+        max-width: 450px;
+        margin-bottom: -190px;
+        flex: 1;
+    }
+
+    @include mx.media-min(900px) {
+        flex-direction: row;
+        //gap: v.$spacer-double;
     }
 }
 
@@ -144,6 +163,8 @@
 
 .section-gift {
     padding: v.$spacer;
+    padding-top: 190px !important;
+    color: v.$color-grey-900;
 
     &__title {
         color: v.$color-grey-900;

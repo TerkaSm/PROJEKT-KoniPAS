@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+.columns {
+    columns: 25rem;
+    gap: v.$spacer-large;
+}

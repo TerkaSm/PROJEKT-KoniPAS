@@ -19,30 +19,16 @@
     }
 
 
-    // &--primary {
-    //     color: v.$color-secondary;
-    //     background-color: v.$color-primary;
-    //     border: 2px solid v.$color-secondary;
+    &--light {
+        color: v.$color-white;
+        background-color: v.$color-primary-700;
+        border: 1px solid v.$color-white;
 
-    //     &:hover {
-    //         color: v.$color-primary;
-    //         background-color: v.$color-secondary;
-    //         border: 2px solid v.$color-secondary;
-    //         font-weight: 700;
-    //         transform: scale(1.1);
-    //     }
-    // }
-
-    // &--dark {
-    //     color: v.$color-primary;
-    //     border: 2px solid v.$color-primary;
-    //     background-color: v.$color-quartiary;
-
-    //     &:hover {
-    //         color: v.$color-quartiary;
-    //         background-color: v.$color-primary;
-    //         border: 2px solid v.$color-primary;
-    //         transform: scale(1.1);
-    //     }
+        &:hover {
+            color: v.$color-primary-700;
+            background-color: v.$color-white;
+            border: 1px solid v.$color-white;
+        }
     }
+}
 

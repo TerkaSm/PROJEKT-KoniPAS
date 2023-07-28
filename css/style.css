@@ -23,6 +23,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cormorant Garamond", serif;
+  line-height: 1.2;
 }
 
 a {
@@ -30,17 +31,23 @@ a {
 }
 
 .heading-primary {
-  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-size: clamp(2.25rem, 8vw, 4rem);
   font-weight: 400;
 }
 
 .heading-secondary {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 400;
+}
+
+.heading-tertiary {
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 400;
 }
 
 .paragraph {
-  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-size: clamp(1rem, 3vw, 1.1rem);
+  font-weight: 300;
   line-height: 2;
 }
 .paragraph:not(:last-child) {
@@ -50,6 +57,18 @@ a {
 .u-center-text {
   text-align: center !important;
   margin: 0 auto;
+}
+
+.u-margin-top-0 {
+  margin-top: 0;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
 }
 
 .u-margin-bottom-small {
@@ -118,6 +137,19 @@ a {
 }
 .u-background--color-primary-700 {
   background-color: #A69384;
+}
+
+.u-responzive-img__wrapp {
+  background-color: #fff;
+  padding: 1.25rem;
+  flex: 1;
+  display: grid;
+  place-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.u-responzive-img__img {
+  width: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -447,11 +479,24 @@ template {
   background-color: #A69384;
   border: 1px solid #A69384;
 }
+.btn--light {
+  color: #fff;
+  background-color: #A69384;
+  border: 1px solid #fff;
+}
+.btn--light:hover {
+  color: #A69384;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
 
 .card-action {
   background-color: #F2EDE7;
   color: #2D332E;
   padding: 20px;
+}
+.card-action:hover {
+  transform: scale(1.1);
 }
 .card-action__link-grid {
   display: grid;
@@ -475,6 +520,12 @@ template {
 }
 .card-action__link:hover {
   border-bottom: 1px solid #2D332E;
+}
+
+.columns {
+  -moz-columns: 25rem;
+       columns: 25rem;
+  gap: 5rem;
 }
 
 .header {
@@ -503,7 +554,7 @@ template {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.3rem;
+  gap: 1.5rem;
   justify-content: center;
   margin: 0 auto;
 }
@@ -770,16 +821,33 @@ template {
 
 .section-for {
   padding: 1.25rem;
+  color: #2D332E;
 }
 .section-for__title {
+  text-align: center;
   color: #2D332E;
 }
 
 .section-institutions {
   padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
 }
+.section-institutions__fig {
+  max-width: 450px;
+  margin-bottom: -190px;
+  flex: 1;
+}
+@media screen and (min-width: 900px) {
+  .section-institutions {
+    flex-direction: row;
+  }
+}
+
 .section-gift {
   padding: 1.25rem;
+  padding-top: 190px !important;
+  color: #2D332E;
 }
 .section-gift__title {
   color: #2D332E;

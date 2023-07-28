@@ -7,6 +7,10 @@
     color: v.$color-grey-900;
     padding: 20px;
 
+    &:hover {
+        transform: scale(1.1);
+    }
+
     &__link-grid {
         @include mx.grid-center;
     }
