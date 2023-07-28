@@ -62,6 +62,11 @@
                 position: absolute;
                 bottom: 94px;
                 right: 370px;
+
+                &:hover {
+                    transform: scale(2);
+                    z-index: 1000;
+                }
             }
         }
 
@@ -80,6 +85,11 @@
                 position: absolute;
                 bottom: -185px;
                 right: 347px;
+
+                &:hover {
+                    transform: scale(1.5);
+                    z-index: 1000;
+                }
             }
         }
 
@@ -97,6 +107,11 @@
                 position: absolute;
                 right: -50px;
                 bottom: -130px;
+
+                &:hover {
+                    transform: scale(1.2);
+                    z-index: 1000;
+                }
             }
         }
     }
@@ -110,7 +125,7 @@
 // SECTION - ACTIONS
 
 .section-actions {
-    padding: v.$spacer;
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
 
     &__title {
         text-align: center;
@@ -121,7 +136,7 @@
 // SECTION - FOR
 
 .section-for {
-    padding: v.$spacer;
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
     color: v.$color-grey-900;
 
     &__title {
@@ -134,13 +149,10 @@
 // SECTION - INSTITUTIONS
 
 .section-institutions {
-    padding: v.$spacer;
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
     display: flex;
     flex-direction: column;
 
-    &__content {
-        
-    }
 
     &__title {
         
@@ -148,13 +160,28 @@
 
     &__fig {
         max-width: 450px;
-        margin-bottom: -190px;
+        max-height: 632px;
+        margin: 0 auto;
+        margin-bottom: -11.875rem;
         flex: 1;
+
+        @include mx.media-min(1000px) {
+            margin-bottom: 0;
+            margin-top: 11rem;
+        }
     }
 
-    @include mx.media-min(900px) {
+    &__img {
+
+        @include mx.media-min(1000px) {
+            width: 410px;
+        }
+    }
+
+    @include mx.media-min(1000px) {
         flex-direction: row;
-        //gap: v.$spacer-double;
+        gap: v.$spacer-double;
+        margin-bottom: -11rem;
     }
 }
 
@@ -162,11 +189,23 @@
 // SECTION - GIFT
 
 .section-gift {
-    padding: v.$spacer;
-    padding-top: 190px !important;
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
+    padding-top: 11.875rem;
     color: v.$color-grey-900;
+
+    @include mx.media-min(1000px) {
+        padding-top: 2rem;
+    }
 
     &__title {
         color: v.$color-grey-900;
+    }
+
+    &__content {
+        max-width: 50vw;
+
+        @include mx.media-min(1000px) {
+            max-width: 50%;
+        }
     }
 }

@@ -6,7 +6,7 @@
 .navigation {
     display: none;
 
-    @include mx.media-min(1130px) {
+    @include mx.media-min(1140px) {
         display: block;
     }
 
@@ -22,7 +22,10 @@
         margin: 0 10px;
         padding: 5px;
         position: relative;
-        overflow: hidden;
+
+        &:hover {
+            font-weight: 600;
+        }
 
         &::before {
         content: "";
@@ -53,8 +56,40 @@
         text-transform: uppercase;
         padding: 5px;
     }
+
+    &__submenu {
+        list-style: none;
+        position: absolute;
+        background-color: v.$color-primary-400;
+        top: 100%;
+        left: 0;
+        padding: v.$spacer 0;
+        margin: 0;
+        margin-left: -5rem;
+        width: 18rem;
+        display: none;
+
+        &--visible {
+            display: block;
+        }
+    }
+
+    &__submenu-item {
+        padding: 10px 20px;
+
+    }
+
+    &__submenu-link {
+        color: v.$color-grey-900;
+        font-size: 1rem;
+        padding: 10px 5px;
+        font-weight: 500;
+
+        &:hover {
+            border-bottom: 1px solid v.$color-grey-900;
+            font-weight: 600;
+        }
+    }
 }
 
-.active::before { /* Styl pro aktivní stav */
-    transform: scaleX(1);
-  }
+
