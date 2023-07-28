@@ -3,6 +3,9 @@
 .header {
     background-color: v.$color-primary-400;
     width: 100%;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 3px 0 30px rgba(0, 0, 0, .1);
     
     &__wrapp {
         color: v.$color-grey-900;

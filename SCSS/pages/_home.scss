@@ -6,11 +6,10 @@
 
 .section-hero {
     color: v.$color-grey-700;
-    padding: v.$spacer;
-    padding-top: 2rem;
-    height: 90vh;
-    min-height: 650px;
-    max-height: 700px;
+    padding-top: 6rem;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 800px;
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
@@ -20,10 +19,12 @@
 
     &__content {
         flex: 2;
+        padding: v.$spacer;
+        padding-top: 0;
 
-        @include mx.media-min(1040px) {
+        @include mx.media-min(750px) {
             height: 50vh;
-            padding-top: 8rem;
+            padding: 8rem v.$spacer 4rem v.$spacer;
         }
     }
 
@@ -31,8 +32,14 @@
         flex: 3;
         position: relative;
 
-        @include mx.media-min(1040px) {
+
+        @include mx.media-min(750px) {
             height: 50vh;
+            padding-top: 29rem;
+        }
+
+        @include mx.media-min(900px) {
+            padding-top: 0;
         }
     }
 
@@ -42,24 +49,24 @@
         background-repeat: no-repeat;
 
         &--1 {
-            height: 170px;
+            height: 153px;         // 90% šířky (šířka/100*88)
             width: 170px;
             background-image: url(/images/IMG_20230517_165906.jpg);
             position: absolute;
-            bottom: 218px;
+            bottom: 205px;
             right: 236px;
 
-            @include mx.media-min(1040px) {
-                height: 175px;
+            @include mx.media-min(900px) {
+                height: 157px;
                 width: 175px;
                 position: absolute;
-                bottom: 105px;
+                bottom: 94px;
                 right: 370px;
             }
         }
 
         &--2 {
-            height: 200px;
+            height: 180px;
             width: 200px;
             margin-left: 45px;
             background-image: url(/images/IMG_20230517_165920.jpg);
@@ -67,8 +74,8 @@
             bottom: 0px;
             right: 228px;
 
-            @include mx.media-min(1040px) {
-                height: 260px;
+            @include mx.media-min(900px) {
+                height: 234px;
                 width: 260px;
                 position: absolute;
                 bottom: -185px;
@@ -77,15 +84,15 @@
         }
 
         &--3 {
-            height: 320px;
+            height: 288px;
             width: 320px;
             background-image: url(/images/IMG_20230517_170002.jpg);
             position: absolute;
             right: -56px;
             bottom: 50px;
 
-            @include mx.media-min(1040px) {
-                height: 450px;
+            @include mx.media-min(900px) {
+                height: 406px;
                 width: 450px;
                 position: absolute;
                 right: -50px;
@@ -94,7 +101,7 @@
         }
     }
 
-    @include mx.media-min(1040px) {
+    @include mx.media-min(750px) {
         flex-direction: row;
         height: 100vw;
     }
@@ -107,6 +114,38 @@
 
     &__title {
         text-align: center;
+        color: v.$color-grey-900;
+    }
+}
+
+// SECTION - FOR
+
+.section-for {
+    padding: v.$spacer;
+
+    &__title {
+        color: v.$color-grey-900;
+    }
+}
+
+
+// SECTION - INSTITUTIONS
+
+.section-institutions {
+    padding: v.$spacer;
+
+    &__title {
+        
+    }
+}
+
+
+// SECTION - GIFT
+
+.section-gift {
+    padding: v.$spacer;
+
+    &__title {
         color: v.$color-grey-900;
     }
 }
