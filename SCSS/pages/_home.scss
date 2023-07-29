@@ -122,6 +122,8 @@
     }
 }
 
+
+
 // SECTION - ACTIONS
 
 .section-actions {
@@ -132,6 +134,7 @@
         color: v.$color-grey-900;
     }
 }
+
 
 // SECTION - FOR
 
@@ -180,7 +183,7 @@
 
     @include mx.media-min(1000px) {
         flex-direction: row;
-        gap: v.$spacer-double;
+        gap: v.$spacer-large;
         margin-bottom: -11rem;
     }
 }
@@ -202,10 +205,53 @@
     }
 
     &__content {
-        max-width: 50vw;
+        //max-width: 50vw;
 
         @include mx.media-min(1000px) {
-            max-width: 50%;
+            max-width: 40vw;
         }
+    }
+
+    &__qr {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        @include mx.media-min(900px) {
+            flex-direction: row;
+            gap: v.$spacer-large;
+        }
+    }
+
+    &__qr-col-1-of-2 {
+        flex: 1;
+        text-align: center;
+    }
+
+    &__qr-col-2-of-2 {
+        flex: 1;
+    }
+
+    &__qr-title {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-top: clamp(2rem, 8vw, 8rem);
+    }
+
+    &__num-account {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    &__fig {
+        margin-bottom: 2rem;
+
+        @include mx.media-min(900px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+
     }
 }

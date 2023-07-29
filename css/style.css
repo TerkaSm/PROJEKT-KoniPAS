@@ -467,7 +467,7 @@ template {
   font-family: "Cormorant Garamond", serif;
   color: #2D332E;
   text-transform: uppercase;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.4;
   font-weight: 500;
   padding: 8px 30px;
@@ -892,7 +892,7 @@ template {
 @media screen and (min-width: 1000px) {
   .section-institutions {
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 5rem;
     margin-bottom: -11rem;
   }
 }
@@ -910,11 +910,43 @@ template {
 .section-gift__title {
   color: #2D332E;
 }
-.section-gift__content {
-  max-width: 50vw;
-}
 @media screen and (min-width: 1000px) {
   .section-gift__content {
-    max-width: 50%;
+    max-width: 40vw;
+  }
+}
+.section-gift__qr {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media screen and (min-width: 900px) {
+  .section-gift__qr {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+.section-gift__qr-col-1-of-2 {
+  flex: 1;
+  text-align: center;
+}
+.section-gift__qr-col-2-of-2 {
+  flex: 1;
+}
+.section-gift__qr-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: clamp(2rem, 8vw, 8rem);
+}
+.section-gift__num-account {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.section-gift__fig {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 900px) {
+  .section-gift__fig {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
