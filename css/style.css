@@ -579,7 +579,7 @@ template {
   text-transform: uppercase;
   padding: 5px 10px 5px 10px;
 }
-.footer__link:hover {
+.footer__link:hover, .footer__link:active {
   border-bottom: 1px solid #2D332E;
   font-weight: 700;
 }
@@ -762,7 +762,7 @@ template {
   padding: 5px;
   position: relative;
 }
-.navigation__item:hover {
+.navigation__item:hover, .navigation__item:active {
   font-weight: 600;
 }
 .navigation__item::before {
@@ -866,7 +866,7 @@ template {
 .section-hero__img-wrapp--1 {
   height: 153px;
   width: 170px;
-  background-image: url(/images/IMG_20230517_165906.jpg);
+  background-image: url(/images/placeholder-hero-1.jpg);
   position: absolute;
   bottom: 205px;
   right: 236px;
@@ -888,7 +888,7 @@ template {
   height: 180px;
   width: 200px;
   margin-left: 45px;
-  background-image: url(/images/IMG_20230517_165920.jpg);
+  background-image: url(/images/placeholder-hero-2.jpg);
   position: absolute;
   bottom: 0px;
   right: 228px;
@@ -902,17 +902,18 @@ template {
     right: 347px;
   }
   .section-hero__img-wrapp--2:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     z-index: 1000;
   }
 }
 .section-hero__img-wrapp--3 {
   height: 288px;
   width: 320px;
-  background-image: url(/images/IMG_20230517_170002.jpg);
+  background-image: url(/images/placeholder-hero-3.jpg);
   position: absolute;
   right: -56px;
   bottom: 50px;
+  overflow: hidden;
 }
 @media screen and (min-width: 900px) {
   .section-hero__img-wrapp--3 {

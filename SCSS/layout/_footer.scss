@@ -49,7 +49,8 @@
         text-transform: uppercase;
         padding: 5px 10px 5px 10px;
 
-        &:hover {
+        &:hover, 
+        &:active {
             border-bottom: 1px solid v.$color-grey-900;
             font-weight: 700;
         }
@@ -83,7 +84,7 @@
 
 .section-copy {
     padding: clamp(v.$spacer, 8vw, v.$spacer-double);
-    
+
     &__p {
         color: v.$color-white;
     }

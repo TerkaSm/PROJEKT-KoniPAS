@@ -24,7 +24,8 @@
         padding: 5px;
         position: relative;
 
-        &:hover {
+        &:hover,
+        &:active {
             font-weight: 600;
         }
 

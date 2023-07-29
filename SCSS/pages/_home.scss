@@ -51,7 +51,7 @@
         &--1 {
             height: 153px;         // 90% šířky (šířka/100*88)
             width: 170px;
-            background-image: url(/images/IMG_20230517_165906.jpg);
+            background-image: url(/images/placeholder-hero-1.jpg);
             position: absolute;
             bottom: 205px;
             right: 236px;
@@ -74,7 +74,7 @@
             height: 180px;
             width: 200px;
             margin-left: 45px;
-            background-image: url(/images/IMG_20230517_165920.jpg);
+            background-image: url(/images/placeholder-hero-2.jpg);
             position: absolute;
             bottom: 0px;
             right: 228px;
@@ -87,7 +87,7 @@
                 right: 347px;
 
                 &:hover {
-                    transform: scale(1.5);
+                    transform: scale(1.2);
                     z-index: 1000;
                 }
             }
@@ -96,10 +96,11 @@
         &--3 {
             height: 288px;
             width: 320px;
-            background-image: url(/images/IMG_20230517_170002.jpg);
+            background-image: url(/images/placeholder-hero-3.jpg);
             position: absolute;
             right: -56px;
             bottom: 50px;
+            overflow: hidden;
 
             @include mx.media-min(900px) {
                 height: 406px;
