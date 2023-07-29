@@ -82,7 +82,8 @@
 }
 
 .section-copy {
-
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
+    
     &__p {
         color: v.$color-white;
     }

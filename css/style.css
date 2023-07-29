@@ -604,13 +604,16 @@ template {
   font-weight: 700;
 }
 
+.section-copy {
+  padding: clamp(1.25rem, 8vw, 2.5rem);
+}
 .section-copy__p {
   color: #fff;
 }
 
 .header {
   background-color: #ECDFD0;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 9999;
   box-shadow: 3px 0 30px rgba(0, 0, 0, 0.1);
