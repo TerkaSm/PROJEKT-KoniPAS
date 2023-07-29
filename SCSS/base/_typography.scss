@@ -43,4 +43,8 @@ a {
     &:not(:last-child) {
         margin-bottom: 2rem;
     }
+
+    &--white {
+        color: v.$color-white;
+    }
 }

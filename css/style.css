@@ -53,6 +53,9 @@ a {
 .paragraph:not(:last-child) {
   margin-bottom: 2rem;
 }
+.paragraph--white {
+  color: #fff;
+}
 
 .u-center-text {
   text-align: center !important;
@@ -601,6 +604,10 @@ template {
   font-weight: 700;
 }
 
+.section-copy__p {
+  color: #fff;
+}
+
 .header {
   background-color: #ECDFD0;
   width: 100%;
@@ -946,6 +953,9 @@ template {
   display: flex;
   flex-direction: column;
 }
+.section-institutions__title {
+  color: #fff;
+}
 .section-institutions__fig {
   max-width: 450px;
   max-height: 632px;
@@ -993,6 +1003,11 @@ template {
 @media screen and (min-width: 1300px) {
   .section-gift__content {
     max-width: 30vw;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .section-gift__content {
+    max-width: 25vw;
   }
 }
 .section-gift__qr {

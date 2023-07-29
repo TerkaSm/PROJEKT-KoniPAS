@@ -1,0 +1,33 @@
+{
+  "name": "projekt-konipas",
+  "version": "1.0.0",
+  "description": "Web spolku KoniPAS, který podporuje rodiny s dětmi co mají PAS nebo jiné speciální potřeby",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerkaSm/PROJEKT-KoniPAS.git"
+  },
+  "keywords": [
+    "PAS",
+    "KoniPAS",
+    "spolek konipas",
+    "autismus",
+    "jak poznat PAS",
+    "dítě má diagnostikovaný PAS",
+    "co je to PAS",
+    "pomoc dětem s PAS"
+  ],
+  "author": "Tereza Smolová",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/TerkaSm/PROJEKT-KoniPAS/issues"
+  },
+  "homepage": "https://github.com/TerkaSm/PROJEKT-KoniPAS#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

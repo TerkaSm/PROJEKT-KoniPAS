@@ -158,7 +158,7 @@
 
 
     &__title {
-        
+        color: v.$color-white;
     }
 
     &__fig {
@@ -213,6 +213,10 @@
 
         @include mx.media-min(1300px) {
             max-width: 30vw;
+        }
+
+        @include mx.media-min(1500px) {
+            max-width: 25vw;
         }
     }
 
