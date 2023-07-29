@@ -63,7 +63,8 @@
 
         &:hover, 
         &:active {
-            border-bottom: 1px solid v.$color-grey-900;
+            font-weight: 700;
+            border-bottom: 1px solid v.$color-black;
         }
     }
 

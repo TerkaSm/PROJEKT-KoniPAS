@@ -531,24 +531,74 @@ template {
 .footer {
   color: #2D332E;
   font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
 }
 .footer__conteiner {
   padding: clamp(1.25rem, 8vw, 2.5rem);
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
   display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
+}
+@media screen and (min-width: 700px) {
+  .footer__conteiner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer__conteiner {
+    grid-template-columns: 2fr 3fr 3fr 1fr;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer__conteiner {
+    grid-template-columns: 200px 16rem 16rem 18rem 10rem;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 700px) {
+  .footer__fig {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer__fig {
+    grid-column: 1/2;
+  }
+}
+.footer__menu-item {
+  padding: 0 10px 16px;
 }
 .footer__link {
   color: #2D332E;
   text-transform: uppercase;
+  padding: 5px 10px 5px 10px;
+}
+.footer__link:hover {
+  border-bottom: 1px solid #2D332E;
+  font-weight: 700;
 }
 .footer__submenu {
   margin: 0;
-  padding: 0;
+  padding-top: 15px;
+  padding-left: 0;
   list-style: none;
+}
+.footer__submenu--last {
+  padding-top: 0;
+}
+.footer__submenu-item {
+  padding: 5px 10px;
 }
 .footer__submenu-link {
   color: #2D332E;
+  padding: 5px 0;
+}
+.footer__submenu-link:hover {
+  border-bottom: 1px solid #2D332E;
+  font-weight: 700;
 }
 
 .header {
@@ -664,7 +714,8 @@ template {
   border-bottom: 1px solid #2D332E;
 }
 .mobile-nav__link:hover, .mobile-nav__link:active {
-  border-bottom: 1px solid #2D332E;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
 }
 .mobile-nav__checkbox:checked ~ .mobile-nav__nav {
   opacity: 1;
@@ -750,7 +801,7 @@ template {
 .navigation__submenu-link {
   color: #2D332E;
   font-size: 1.2rem;
-  padding: 10px 5px;
+  padding: 10px 5px 10px 5px;
   font-weight: 500;
 }
 .navigation__submenu-link:hover {
