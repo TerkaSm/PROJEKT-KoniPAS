@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+.footer {
+    color: v.$color-grey-900;
+    font-family: v.$font-special;
+
+    &__conteiner {
+        padding: clamp(v.$spacer, 8vw, v.$spacer-double);
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+        gap: v.$spacer-double;
+    }
+
+    &__menu-item {
+
+    }
+
+    &__link {
+        color: v.$color-grey-900;
+        text-transform: uppercase;
+    }
+
+    &__submenu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__submenu-item {
+        
+    }
+
+    &__submenu-link {
+        color: v.$color-grey-900;
+    }
+}

@@ -210,6 +210,10 @@
         @include mx.media-min(1000px) {
             max-width: 40vw;
         }
+
+        @include mx.media-min(1300px) {
+            max-width: 30vw;
+        }
     }
 
     &__qr {
