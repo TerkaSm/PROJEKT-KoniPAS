@@ -16,6 +16,11 @@
     flex-direction: column;
     gap: v.$spacer-double;
 
+    @include mx.media-min(750px) {
+        flex-direction: row;
+        height: 100vw;
+    }
+
 
     &__content {
         flex: 2;
@@ -117,10 +122,6 @@
         }
     }
 
-    @include mx.media-min(750px) {
-        flex-direction: row;
-        height: 100vw;
-    }
 }
 
 

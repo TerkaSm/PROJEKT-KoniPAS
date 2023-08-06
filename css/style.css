@@ -831,6 +831,12 @@ template {
   flex-direction: column;
   gap: 2.5rem;
 }
+@media screen and (min-width: 750px) {
+  .section-hero {
+    flex-direction: row;
+    height: 100vw;
+  }
+}
 .section-hero__content {
   flex: 2;
   padding: 1.25rem;
@@ -926,12 +932,6 @@ template {
   .section-hero__img-wrapp--3:hover {
     transform: scale(1.2);
     z-index: 1000;
-  }
-}
-@media screen and (min-width: 750px) {
-  .section-hero {
-    flex-direction: row;
-    height: 100vw;
   }
 }
 
@@ -1048,4 +1048,54 @@ template {
   .section-gift__fig {
     margin-bottom: 0;
   }
+}
+
+.section-o-nas {
+  margin: 0 auto;
+  padding: 1.25rem;
+  padding-top: 6rem;
+}
+.section-o-nas__flex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media screen and (min-width: 750px) {
+  .section-o-nas__flex {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 750px) {
+  .section-o-nas__fig {
+    margin-bottom: -21rem;
+  }
+}
+.section-o-nas__img {
+  border: 20px solid #fff;
+}
+.section-o-nas__content {
+  color: #2D332E;
+}
+
+.section-o-nas-2 {
+  padding: 1.25rem;
+  color: #2D332E;
+}
+.section-o-nas-2__flex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media screen and (min-width: 750px) {
+  .section-o-nas-2__flex {
+    flex-direction: row;
+  }
+}
+.section-o-nas-2__empty {
+  flex: 1;
+}
+.section-o-nas-2__first-content {
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */

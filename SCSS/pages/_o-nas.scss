@@ -1,2 +1,58 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as mx;
+
+.section-o-nas {
+    margin: 0 auto;
+    padding: v.$spacer;
+    padding-top: 6rem;
+    
+    &__flex {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: v.$spacer-large;
+
+        @include mx.media-min(750px) {
+            flex-direction: row;
+        }
+    }
+
+    &__fig {
+
+        @include mx.media-min(750px) {
+            margin-bottom: -21rem;
+        }
+    }
+
+    &__img {
+        border: 20px solid v.$color-white;
+    }
+
+    &__content {
+        color: v.$color-grey-900;
+    }
+}
+
+.section-o-nas-2 {
+    padding: v.$spacer;
+    color: v.$color-grey-900;
+
+    &__flex {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: v.$spacer-large;
+
+        @include mx.media-min(750px) {
+            flex-direction: row;
+        }
+    }
+
+    &__empty {
+        flex: 1;
+    }
+
+    &__first-content {
+        flex: 1;
+    }
+}
