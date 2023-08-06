@@ -2,8 +2,7 @@
 @use '../abstracts/mixins' as mx;
 
 .section-o-nas {
-    margin: 0 auto;
-    padding: v.$spacer;
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
     padding-top: 6rem;
     
     &__flex {
@@ -18,6 +17,7 @@
     }
 
     &__fig {
+        max-width: 90vw;
 
         @include mx.media-min(750px) {
             margin-bottom: -21rem;
@@ -26,6 +26,7 @@
 
     &__img {
         border: 20px solid v.$color-white;
+        width: 100%;
     }
 
     &__content {
@@ -34,7 +35,7 @@
 }
 
 .section-o-nas-2 {
-    padding: v.$spacer;
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
     color: v.$color-grey-900;
 
     &__flex {
@@ -54,5 +55,41 @@
 
     &__first-content {
         flex: 1;
+    }
+
+    &__second-content {
+
+    }
+
+    &__third-content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        @include mx.media-min(750px) {
+            flex-direction: row;
+            gap: v.$spacer-large;
+        }
+    }
+
+    &__fig {
+
+        @include mx.media-min(750px) {
+            margin-bottom: -20rem;
+            max-width: 90vw;
+        }
+    }
+
+    &__img {
+        border: 20px solid v.$color-white;
+        max-width: 100%;
+    }
+}
+
+.section-medallions {
+    padding: clamp(v.$spacer, 8vw, v.$spacer-double);
+
+    &__title {
+        color: v.$color-grey-900;
     }
 }
