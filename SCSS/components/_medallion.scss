@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+.medallion {
+    color: v.$color-grey-900;
+    text-align: center;
+
+    &__fig {
+
+    }
+
+    &__img {
+        border-radius: 50%;
+        max-width: 50vw;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: v.$spacer;
+    }
+
+    &__label {
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
+    &__text {
+        font-size: 1rem;
+    }
+}
