@@ -17,7 +17,8 @@
     }
 
     &__fig {
-        max-width: 90vw;
+        //max-width: 95vw;
+        //flex: 50%;
 
         @include mx.media-min(750px) {
             margin-bottom: -21rem;
@@ -72,11 +73,16 @@
         }
     }
 
+    &__part-of-flex {
+        flex: 1;
+    }
+
     &__fig {
+        flex: 1;
+        max-width: 95vw;
 
         @include mx.media-min(750px) {
             margin-bottom: -20rem;
-            max-width: 90vw;
         }
     }
 
