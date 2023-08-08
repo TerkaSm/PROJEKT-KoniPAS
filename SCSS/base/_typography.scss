@@ -47,4 +47,8 @@ a {
     &--white {
         color: v.$color-white;
     }
+
+    &--bold {
+        font-weight: 700;
+    }
 }

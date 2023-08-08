@@ -56,6 +56,9 @@ a {
 .paragraph--white {
   color: #fff;
 }
+.paragraph--bold {
+  font-weight: 700;
+}
 
 .u-center-text {
   text-align: center !important;
@@ -1099,7 +1102,9 @@ template {
 }
 .section-o-nas__img {
   border: 20px solid #fff;
-  width: 100%;
+  width: 50vw;
+  max-width: 480px;
+  min-width: 340px;
 }
 .section-o-nas__content {
   color: #2D332E;

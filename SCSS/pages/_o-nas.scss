@@ -19,7 +19,7 @@
 
     &__fig {
         //max-width: 95vw;
-        //flex: 50%;
+        //flex: 1;
 
         @include mx.media-min(750px) {
             margin-bottom: -21rem;
@@ -28,7 +28,9 @@
 
     &__img {
         border: 20px solid v.$color-white;
-        width: 100%;
+        width: 50vw;
+        max-width: 480px;
+        min-width: 340px;
     }
 
     &__content {
