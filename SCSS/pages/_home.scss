@@ -7,118 +7,66 @@
 .section-hero {
     color: v.$color-grey-700;
     padding-top: 6rem;
-    height: 100vh;
-    min-height: 870px;
-    //max-height: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    gap: v.$spacer-double;
+    align-items: center;
 
     @include mx.media-min(750px) {
-        flex-direction: row;
-        height: 100vw;
+        grid-template-columns: 40% 60%;
+        padding-top: 10rem;
+        padding-bottom: 4rem;
     }
 
 
     &__content {
-        flex: 1;
-        padding: v.$spacer;
+        padding: v.$spacer-double;
         padding-top: 0;
 
-        @include mx.media-min(750px) {
-            height: 50vh;
-            padding: 8rem v.$spacer 4rem v.$spacer;
+        @include mx.media-min(1000px) {
+            padding-top: 2rem;
         }
     }
 
+    &__hexa {
+        text-align: center;
+    }
+
     &__images {
-        flex: 1;
         position: relative;
 
-
-        @include mx.media-min(750px) {
-            height: 50vh;
-            padding-top: 29rem;
-        }
-
-        @include mx.media-min(900px) {
-            padding-top: 0;
-        }
     }
 
     &__img-wrapp {
         background-size: cover;
+        -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         background-repeat: no-repeat;
 
         &--1 {
-            height: 153px;         // 90% šířky (šířka/100*88)
-            width: 170px;
             background-image: url(/images/placeholder-hero-1.jpg);
-            position: absolute;
-            bottom: 205px;
-            right: 236px;
-
-            @include mx.media-min(900px) {
-                height: 157px;
-                width: 175px;
-                position: absolute;
-                bottom: 94px;
-                right: 370px;
-
-                &:hover {
-                    transform: scale(2);
-                    z-index: 1000;
-                }
-            }
+            margin: 2% -6% 9% 36%;
+            width: 70%;
+            padding-top:60%;
         }
 
         &--2 {
-            height: 180px;
-            width: 200px;
-            margin-left: 45px;
             background-image: url(/images/placeholder-hero-2.jpg);
             position: absolute;
-            bottom: 0px;
-            right: 228px;
-
-            @include mx.media-min(900px) {
-                height: 234px;
-                width: 260px;
-                position: absolute;
-                bottom: -185px;
-                right: 347px;
-
-                &:hover {
-                    transform: scale(1.2);
-                    z-index: 1000;
-                }
-            }
+            left: 8%;
+            top: -4%;
+            width: 34%;
+            padding-top:30%;
         }
 
         &--3 {
-            height: 288px;
-            width: 320px;
             background-image: url(/images/placeholder-hero-3.jpg);
             position: absolute;
-            right: -56px;
-            bottom: 50px;
-            overflow: hidden;
-
-            @include mx.media-min(900px) {
-                height: 406px;
-                width: 450px;
-                position: absolute;
-                right: -50px;
-                bottom: -130px;
-
-                &:hover {
-                    transform: scale(1.2);
-                    z-index: 1000;
-                }
-            }
+            left: 0;
+            bottom: -15%;
+            width: 44%;
+            padding-top:37%;
         }
     }
 
