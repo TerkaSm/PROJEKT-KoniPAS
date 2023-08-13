@@ -11,7 +11,6 @@ html {
 
 body {
   box-sizing: border-box;
-  color: #F2EDE7;
 }
 
 body {
@@ -852,8 +851,7 @@ template {
   color: #454E47;
   padding-top: 6rem;
   height: 100vh;
-  min-height: 700px;
-  max-height: 800px;
+  min-height: 870px;
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
@@ -867,7 +865,7 @@ template {
   }
 }
 .section-hero__content {
-  flex: 2;
+  flex: 1;
   padding: 1.25rem;
   padding-top: 0;
 }
@@ -878,7 +876,7 @@ template {
   }
 }
 .section-hero__images {
-  flex: 3;
+  flex: 1;
   position: relative;
 }
 @media screen and (min-width: 750px) {

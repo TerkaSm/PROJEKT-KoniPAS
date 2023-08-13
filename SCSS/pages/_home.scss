@@ -8,8 +8,8 @@
     color: v.$color-grey-700;
     padding-top: 6rem;
     height: 100vh;
-    min-height: 700px;
-    max-height: 800px;
+    min-height: 870px;
+    //max-height: 800px;
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
@@ -23,7 +23,7 @@
 
 
     &__content {
-        flex: 2;
+        flex: 1;
         padding: v.$spacer;
         padding-top: 0;
 
@@ -34,7 +34,7 @@
     }
 
     &__images {
-        flex: 3;
+        flex: 1;
         position: relative;
 
 
