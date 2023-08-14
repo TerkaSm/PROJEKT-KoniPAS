@@ -44,6 +44,11 @@ a {
   font-weight: 400;
 }
 
+.heading-quartiary {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-weight: 700;
+}
+
 .paragraph {
   font-size: clamp(1rem, 3vw, 1.1rem);
   font-weight: 300;
@@ -874,9 +879,17 @@ template {
 }
 .section-hero__hexa {
   text-align: center;
+  padding-bottom: 1.25rem;
 }
 .section-hero__images {
   position: relative;
+  display: flex;
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .section-hero__images {
+    overflow: visible;
+  }
 }
 .section-hero__img-wrapp {
   background-size: cover;
@@ -885,24 +898,24 @@ template {
   background-repeat: no-repeat;
 }
 .section-hero__img-wrapp--1 {
-  background-image: url(/images/placeholder-hero-1.jpg);
+  background-image: url(/images/placeholder-hero-3.jpg);
   margin: 2% -6% 9% 36%;
   width: 70%;
   padding-top: 60%;
 }
 .section-hero__img-wrapp--2 {
-  background-image: url(/images/placeholder-hero-2.jpg);
+  background-image: url(/images/placeholder-hero-1.jpg);
   position: absolute;
   left: 8%;
-  top: -4%;
+  top: 0;
   width: 34%;
   padding-top: 30%;
 }
 .section-hero__img-wrapp--3 {
-  background-image: url(/images/placeholder-hero-3.jpg);
+  background-image: url(/images/placeholder-hero-2.jpg);
   position: absolute;
   left: 0;
-  bottom: -15%;
+  bottom: 0;
   width: 44%;
   padding-top: 37%;
 }

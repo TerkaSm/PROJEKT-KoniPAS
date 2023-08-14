@@ -31,10 +31,17 @@
 
     &__hexa {
         text-align: center;
+        padding-bottom: v.$spacer;
     }
 
     &__images {
         position: relative;
+        display: flex;
+        overflow: hidden;
+
+        @include mx.media-min(1200px) {
+            overflow: visible;
+        }
 
     }
 
@@ -45,26 +52,26 @@
         background-repeat: no-repeat;
 
         &--1 {
-            background-image: url(/images/placeholder-hero-1.jpg);
+            background-image: url(/images/placeholder-hero-3.jpg);
             margin: 2% -6% 9% 36%;
             width: 70%;
             padding-top:60%;
         }
 
         &--2 {
-            background-image: url(/images/placeholder-hero-2.jpg);
+            background-image: url(/images/placeholder-hero-1.jpg);
             position: absolute;
             left: 8%;
-            top: -4%;
+            top: 0;
             width: 34%;
             padding-top:30%;
         }
 
         &--3 {
-            background-image: url(/images/placeholder-hero-3.jpg);
+            background-image: url(/images/placeholder-hero-2.jpg);
             position: absolute;
             left: 0;
-            bottom: -15%;
+            bottom: 0;
             width: 44%;
             padding-top:37%;
         }
