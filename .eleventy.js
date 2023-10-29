@@ -20,6 +20,9 @@ module.exports = function(eleventyConfig) {
     // Přidání passthrough pro soubory .js
     eleventyConfig.addPassthroughCopy("*.js");
 
+    // Přidání passthrough pro soubory .pdf
+    eleventyConfig.addPassthroughCopy("*.pdf");
+
     eleventyConfig.setBrowserSyncConfig({
       callbacks: {
         ready: function (err, browserSync) {
