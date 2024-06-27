@@ -568,6 +568,7 @@ template {
   color: #2D332E;
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
+  box-shadow: 3px 0 30px rgba(0, 0, 0, 0.1);
 }
 .footer__conteiner {
   padding: clamp(1.25rem, 8vw, 2.5rem);
