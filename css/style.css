@@ -1037,6 +1037,10 @@ template {
     margin-bottom: 0;
   }
 }
+.section-gift__instructions {
+  font-size: 0.9rem;
+  font-style: italic;
+}
 
 .comunity__fig {
   max-width: 100vw;
