@@ -190,7 +190,7 @@
 
     &__qr-col-1-of-2 {
         flex: 1;
-        text-align: center;
+        // text-align: strart;
     }
 
     &__qr-col-2-of-2 {
@@ -200,7 +200,7 @@
     &__qr-title {
         text-transform: uppercase;
         font-size: 1.2rem;
-        margin-top: clamp(2rem, 8vw, 8rem);
+        margin-top: clamp(2rem, 4vw, 4rem);
     }
 
     &__num-account {
@@ -208,8 +208,13 @@
         font-size: 2rem;
     }
 
-    &__fig {
+    &__img {
         margin-bottom: 2rem;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
         @include mx.media-min(900px) {
             margin-bottom: 0;
