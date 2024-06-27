@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+.partneri {
+
+  & h2, h3 {
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(3rem, 6vw, 5rem);
+    text-align: center;
+
+    @include mx.media-min(550px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mx.media-min(950px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include mx.media-min(1350px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__thanks {
+    font-size: 1.6rem;
+  }
+}

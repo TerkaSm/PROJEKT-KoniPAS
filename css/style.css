@@ -1012,6 +1012,7 @@ template {
 }
 .section-gift__qr-col-1-of-2 {
   flex: 1;
+  text-align: center;
 }
 .section-gift__qr-col-2-of-2 {
   flex: 1;
@@ -1027,10 +1028,13 @@ template {
 }
 .section-gift__img {
   margin-bottom: 2rem;
+  margin-left: -3Opx;
+  display: block;
 }
 .section-gift__img img {
   max-width: 100%;
   height: auto;
+  margin-left: -3Opx;
 }
 @media screen and (min-width: 900px) {
   .section-gift__img {
@@ -1040,6 +1044,7 @@ template {
 .section-gift__instructions {
   font-size: 0.9rem;
   font-style: italic;
+  text-align: start;
 }
 
 .comunity__fig {
@@ -1147,4 +1152,41 @@ template {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
+}
+
+.partneri h2, .partneri h3 {
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.partneri h3 {
+  text-transform: uppercase;
+}
+.partneri__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(3rem, 6vw, 5rem);
+  text-align: center;
+}
+@media screen and (min-width: 550px) {
+  .partneri__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 950px) {
+  .partneri__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .partneri__grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.partneri__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.partneri__thanks {
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */

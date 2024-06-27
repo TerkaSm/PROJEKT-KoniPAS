@@ -190,7 +190,7 @@
 
     &__qr-col-1-of-2 {
         flex: 1;
-        // text-align: strart;
+        text-align: center;
     }
 
     &__qr-col-2-of-2 {
@@ -210,10 +210,13 @@
 
     &__img {
         margin-bottom: 2rem;
+        margin-left: -3Opx;
+        display: block;
 
         img {
             max-width: 100%;
             height: auto;
+            margin-left: -3Opx;
         }
 
         @include mx.media-min(900px) {
@@ -224,6 +227,7 @@
     &__instructions {
         font-size: .9rem;
         font-style: italic;
+        text-align: start;
     }
 
 }
