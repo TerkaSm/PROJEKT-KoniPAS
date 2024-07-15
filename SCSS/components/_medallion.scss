@@ -11,7 +11,9 @@
 
     &__img {
         border-radius: 50%;
+        aspect-ratio: 1;
         max-width: 50vw;
+        height: auto;
     }
 
     &__title {

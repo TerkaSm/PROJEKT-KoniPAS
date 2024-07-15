@@ -45,7 +45,7 @@ a {
 }
 
 .heading-quartiary {
-  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
   font-weight: 700;
 }
 
@@ -548,7 +548,9 @@ template {
 }
 .medallion__img {
   border-radius: 50%;
+  aspect-ratio: 1;
   max-width: 50vw;
+  height: auto;
 }
 .medallion__title {
   font-size: 1.8rem;
