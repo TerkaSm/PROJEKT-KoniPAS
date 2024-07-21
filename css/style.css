@@ -129,6 +129,10 @@ a {
   padding-bottom: 8rem !important;
 }
 
+.u-font-italic {
+  font-style: italic;
+}
+
 .u-wrapper {
   max-width: 1120px;
   margin: 0 auto;
@@ -1192,4 +1196,37 @@ template {
 }
 .partneri__thanks {
   font-size: 1.6rem;
+}
+
+.child-support__img {
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.child-support__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 20px solid #fff;
+}
+.child-support__grid {
+  padding-block: clamp(1.25rem, 8vw, 2.5rem);
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  place-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .child-support__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.child-support__img-2 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 20px solid #fff;
 }/*# sourceMappingURL=style.css.map */
